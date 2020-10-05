@@ -1,0 +1,22 @@
+app:
+  name: AppZ Ops
+  code: APPZOPS
+  notify: appzdev@ecloudcontrol.com
+    
+build:
+  version: 5.4
+  env: SYSTEM
+  build_file: none
+  output_files: output/*.zip
+  image_template: ops-0.2
+  image_name: appz/ops
+    
+deploy:
+  context: appz/SYSTEM
+  ops: 
+    - apps.yaml
+    - scale.yaml
+    - restart.yaml
+
+properties:
+  revision : 14

@@ -1,0 +1,6 @@
+scale:
+  app_code: ecloudcontrol/tomcat-helloworld
+  context: alpha/DEV
+  version: 0.4
+  replicas: 3
+  

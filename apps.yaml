@@ -1,0 +1,17 @@
+apps:
+  - app_code: ecloudcontrol/tomcat-helloworld
+    business_unit: ECS
+    app_name: Tomcat HelloWorld
+    owner: ECS
+    data: 
+      workflow: default
+      token: default
+      branches: 
+      - dev
+      - ua
+      - prod
+    acl:
+      - name: jcarver
+        env: DEV
+        access: rw
+        data: {}
